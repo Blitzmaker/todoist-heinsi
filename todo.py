@@ -139,6 +139,10 @@ class TodoistTodoListEntity(CoordinatorEntity[TodoistCoordinator], TodoListEntit
 
                 if item.status != existing_item.status:
                     if item.status == TodoItemStatus.COMPLETED:
+                        await self.coordinator.api.update_task(
+                            task_id=uid,
+                            due_date=datetime.date.today(),
+                        )
                         await self.coordinator.api.complete_task(task_id=uid)
                     else:
                         await self.coordinator.api.uncomplete_task(task_id=uid)

@@ -1,6 +1,6 @@
 {
-  "domain": "todoist",
-  "name": "Todoist",
+  "domain": "todoist_heinsi",
+  "name": "Todoist Heinsi",
   "codeowners": ["@boralyl"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/todoist",
