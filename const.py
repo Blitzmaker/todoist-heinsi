@@ -91,7 +91,7 @@ ASSIGNEE: Final = "assignee"
 # Todoist API: Collaborators in shared projects
 COLLABORATORS: Final = "collaborators"
 
-DOMAIN: Final = "todoist"
+DOMAIN: Final = "todoist_heinsi"
 
 # Maximum number of items per page for Todoist API requests
 MAX_PAGE_SIZE: Final = 200
